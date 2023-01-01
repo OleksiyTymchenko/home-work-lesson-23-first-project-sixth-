@@ -471,7 +471,7 @@ max-width: 1079px;
 }
 
 .carousel-item{
-  height: 600px;
+  height: 350px;
 }
 
 
@@ -488,6 +488,7 @@ max-width: 1079px;
 .carousel-indicators [data-bs-target]{
   width: 12px;
   height: 12px;border-radius: 100%;
+  background-color: #000;
 }
 button.active{
   width: 6px;
