@@ -90,6 +90,7 @@ h4{
   background: none;
   cursor: pointer;
   background: none;
+  text-transform: uppercase;
 }
  .button{
   /* margin-top: 35px; */
@@ -126,7 +127,7 @@ body main.main .do-not-take .container-box{
   color: var(--primary-background);
   height: 80px;
   width: 100%;
-  /* z-index: 25; */
+  z-index: 25;
 }
 .container-box-header{
   background-color: var(--primary-color);
@@ -209,11 +210,16 @@ body main.main .do-not-take .container-box{
 /*================== we_are ====================*/
 .we-are .container-box{
   padding: 120px 0 207px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .we-are .container-box h3{
   max-width: 895px;
   margin: auto;
   text-align: center;
+  margin-bottom: 44px;
 }
 /*===================== we-provide =====================*/
 .we-provide{
@@ -393,6 +399,28 @@ max-width: 1079px;
 
 .bold{
   font-size: 61px;
+}
+@media (min-width: 200px) and (max-width: 1200px){
+  .list__item:nth-child(2):before{
+    display: none;
+  }
+}
+@media (min-width: 200px) and (max-width: 826px){
+  .list__item:first-child:before{
+    display: none;
+  }
+}
+
+/*================== walking-text =====================*/
+.walking-text{
+  background-color: #F3E9E2;
+  padding: 57px 0 63px;
+  font-size: 75px;
+}
+marquee{
+  -webkit-animation: sliding 1s linear infinite;
+  animation: sliding 1s linear infinite;
+
 }
 /*=================== free-resources ====================*/
 .free-resources{
