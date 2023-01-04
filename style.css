@@ -292,17 +292,22 @@ max-width: 1079px;
   .grid-box{
     display: grid;
     grid-template-columns: 360px 360px 360px;
-    grid-template-rows: 626px 626px 626px;
+    grid-template-rows: 626px;
     gap: 0px;
   }
   .grid-box__item{
     grid-area: 1 / 1 / 2 / 2;
+    position: relative;
   }
   .grid-box__item:nth-child(2){
-    grid-area: 2 / 2 / 2 / 2;
+    position: relative;
+    top: 50px;
+    right: -360px;
   }
   .grid-box__item:nth-child(3){
-    grid-area: 3 / 3 / span 1 / span 1;
+    position: relative;
+    top: 100px;
+    right: -720px;
   }
 }
 @media (min-width: 300px) and (max-width: 1109px) {
