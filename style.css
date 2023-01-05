@@ -538,6 +538,40 @@ button.active{
   width: 6px;
   height: 6px;
 }
+/*================ slider ==================*/
+.slider {
+  height: 400px;
+  display: flex;
+  overflow-x: auto;
+  user-select: none;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 99%;
+  height: 100%;
+  background-image: url(./img/bg-for-slider.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+::-webkit-scrollbar {
+  height: 0;
+}
+@media (max-width: 960px) {
+  .slide {
+    width: 49%;
+  }
+}
+@media (max-width: 480px) {
+  .slide {
+    width: 99%;
+  }
+}
+
+
+
 /*====================== image-mountains ===============*/
 .image-mountains{
   background-image: url(./img/mountain-image.png);
